@@ -6,16 +6,25 @@
     <title>Mountain</title>
 
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto+Slab&display=swap" rel="stylesheet">
     <style>
-        h1 {
-            font-size: 50px;
-            color:bisque;
+        body{
+            font-family: 'Roboto Slab', serif;
+        }
+        .primary-font{
+            font-family: 'Roboto Slab', serif;
+        }
+        .secondary-font{
+            font-family: 'Fira Sans', sans-serif;
+        }
+        #primary-title{
+            font-size:50px;
         }
     </style>
 </head>
 
 <body>
-    <h1>Hi</h1>
+    <h1 id="primary-title">Hi</h1>
     
     <svg class="pop" id="svg" width="300" height="300" viewbox="0 0 100 100">
         <filter id="blur">
@@ -23,8 +32,8 @@
         </filter>
         <path class="slidein" id="mountain" fill="#ab9457" d="" />
     </svg>
-    <h1>Bye</h1>
-    <button onclick="generateMountain()">Draw</button>
+    <h1 class="secondary-font">Bye</h1>
+    <button class="primary-font" onclick="generateMountain()">Draw</button>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript">
